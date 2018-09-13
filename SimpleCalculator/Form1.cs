@@ -203,7 +203,8 @@ namespace SimpleCalculator
             double opr1;
             if (double.TryParse(txtInput.Text, out opr1))
             {
-                txtInput.Text = (Math.Sqrt(opr1)).ToString();
+                //txtInput.Text = (Math.Sqrt(opr1)).ToString();
+                txtInput.Text = (calcRef.SqrRoot(opr1)).ToString();
             }
         }
 
